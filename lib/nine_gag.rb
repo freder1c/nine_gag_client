@@ -1,4 +1,5 @@
 require "nine_gag/client"
+require "nine_gag/collection"
 require "nine_gag/mapper"
 require "nine_gag/model"
 
