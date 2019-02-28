@@ -13,7 +13,7 @@ module NineGag
       private
 
       def request_token(password)
-        parse_token(NineGag::Client::HTTP.post("login", params: { username: username, password: password }))
+        parse_token(HTTP.post("login", params: { username: username, password: password }))
       end
 
       def parse_token(res)

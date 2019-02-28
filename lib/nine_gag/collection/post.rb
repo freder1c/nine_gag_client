@@ -2,7 +2,7 @@ module NineGag
   module Collection
     class Post < Array
       def self.all(opts = {})
-        res = NineGag::Client::HTTP.get(collection_url, params: opts)
+        res = Client::HTTP.get(collection_url, params: opts)
         Mapper::Post.collection(Oj.load(res.body).dig("data", "posts"))
       end
 
