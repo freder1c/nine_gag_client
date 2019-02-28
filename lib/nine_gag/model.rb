@@ -1,4 +1,5 @@
 require "nine_gag/model/base"
+require "nine_gag/model/comment"
 require "nine_gag/model/post"
 
 module NineGag
