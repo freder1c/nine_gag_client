@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     nine_gag_client (0.0.1)
-      oj
-      pry
+      oj (~> 3.7)
+      pry (~> 0.12)
 
 GEM
   remote: https://rubygems.org/

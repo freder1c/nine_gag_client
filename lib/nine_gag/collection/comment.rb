@@ -3,7 +3,7 @@ module NineGag
     class Comment < Array
       def self.for_post(post_id, opts = {})
         res = Client::HTTP.get(collection_url, params: collection_params(post_id).merge(opts))
-        Mapper::Comment.collection(post_id, Oj.load(res.body).dig("payload", "comments"))
+        Mapper::Comment.collection(post_id, res.dig("payload", "comments"))
       end
 
       def next_page

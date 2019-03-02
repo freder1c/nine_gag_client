@@ -1,5 +1,3 @@
-require "oj"
-
 module NineGag
   module Model
     class Base
